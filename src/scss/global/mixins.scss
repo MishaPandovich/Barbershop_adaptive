@@ -1,0 +1,26 @@
+$general-font: 'Montserrat', 'Arial', sans-serif;
+$font-for-title: 'Quicksand', 'Verdana', sans-serif;
+
+@mixin general-style-font() {
+  font-family: $general-font;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+@mixin style-font-for-navigation() {
+  font-family: $general-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+@mixin style-font-for-title() {
+  font-family: $font-for-title;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}

@@ -1,0 +1,68 @@
+main.page-log-in
+  section.module.module_log-in
+    h2.module__title Войти
+    form.module__form(action="#" method="post")
+      input.module__input(type="email" id="e-mail" placeholder="Email")
+      input.module__input(type="password" id="password" placeholder="Пароль")
+      button.module__button.module__button-log-in(type="submit") Войти
+      p.module__text Нет аккаунта Toxin?
+      a.module__link.create-accaunt(href="#") Создать
+  
+  section.module.module_sing-up.module_hidden
+    h2.module__title Регистрация аккаунта
+    form.module__form(action="#" method="post")
+      input.module__input(type="text" id="name" placeholder="Имя")
+      input.module__input(type="text" id="surname" placeholder="Фамилия")
+      input.module__radio-btn(type="radio" id="man" name="sex")
+      label.module__radio-label(for="man") Мужчина
+      input.module__radio-btn(type="radio" id="woman" name="sex")
+      label.module__radio-label(for="woman") Женщина
+      label.module__label(for="birth-date") Дата рождения
+      input.module__input(type="text" id="birth-date" placeholder="ДД.ММ.ГГГГ")
+      label.module__label Данные для входа в сервис
+      input.module__input(type="email" id="sing-up-e-mail" placeholder="Email")
+      input.module__input(type="password" id="sing-up-password" placeholder="Пароль")
+      input.module__checkbox(type="checkbox" id="distribution")
+      label.module__checkbox-label(for="distribution") Получать спецпредложения
+      button.module__button.module__button-sing-up(type="submit") Перейти к оплате
+      p.module__text Уже есть аккаунт на Toxin?
+      a.module__link.create-accaunt(href="#") Войти
+
+//- main.page-login
+//-   section.model.model-login
+
+//-   //- шаблон блока регистрации
+//-   template(id="model-registration")
+//-     div.model-registration__inner
+//-       h2.model-registration__title Регистрация аккаунта
+//-       form.form-registration(action="#" method="post")
+//-         input.form-registration__input(type="text" name="name" id="name" placeholder="Имя")
+//-         input.form-registration__input(type="text" name="surname" id="surname" placeholder="Фамилия")
+//-         div.form-registration__checkbox
+//-           input.form-registration__gender.form-registration__gender--man(type="checkbox" name="man" id="man")
+//-           label.form-registration__label(for="man") Мужчина
+//-           input.form-registration__gender.form-registration__gender--woman(type="checkbox" name="woman" id="woman")
+//-           label.form-registration__label(for="woman") Женщина
+//-         label.form-registration__label(for="birthday") Дата рождения
+//-         input.form-registration__input(type="text" id="birthday" placeholde="ДД.ММ.ГГГГ")
+//-         div.data-login.form-registration__data-login Данные для входа в сервис
+//-           input.form-registration__input(type="text" id="email" placeholde="email")
+//-           input.form-registration__input(type="text" id="password" placeholde="password")
+//-         input.form-registration__special-offer(type="checkbox" name="special-offer" id="special-offer")
+//-         label.form-registration__label(for="special-offer") Получать спецпредложения
+//-         button.pay.form-registration__pay Перейти к оплате
+//-         div.block-login
+//-           p.block-login__text Уже есть аккаунт на Toxin
+//-           button.block-login__button Войти
+  
+//-   //- шаблон блока авторизации
+//-   template(id="model-login")
+//-     div.model-login__inner
+//-       h2.model-login__title Войти
+//-       form.form-login(action="#" method="#")
+//-         input.form-login__input(type="text" id="email" placeholder="Email")
+//-         input.form-login__input(type="text" id="password" placeholder="Пароль")
+//-         button.form-login__button Войти
+//-         div.block-registration
+//-           p.block-registration__text Нет аккаунта на Toxin?
+//-           button.block-registration__button Создать

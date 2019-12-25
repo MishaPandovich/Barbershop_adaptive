@@ -1,0 +1,33 @@
+section.order-card
+  //- сделать из этого шаблон
+  div.order-card__inner
+    span.order-card__number-room №<span class="number-room">888</span><span class="order-card__status-room">люкс</span>
+    span.order-card__price <span class="price-value">9990 Р</span> в сутки
+  form.order-card__form(action="#" method="post")
+    div.order-card__inner
+      label.order-card__label Прибытие
+        input.order-card__input(type="text" id="datepicker" placeholder="19.08.2019")
+      label.order-card__label Выезд
+        input.order-card__input(type="text" id="go" placeholder="23.08.2019")
+    div.select-visitors
+      label.select-visitors__label Гости
+        input.select-visitors__input(type="text" id="visitors" placeholder="3 гостя" readonly)
+      div.select-visitors__block
+        div.select-visitors__inner
+        span.select-visitors__clear Очистить
+        span.select-visitors__close Выполнить
+  div.final-count 
+    p.final-count__row.final-count__row_initial-amount 
+      span.final-count__inner <span class="price-value">9990 <span class="currency">Р</span></span>x<span class="count-day">4 суток</span>
+      span.initial-amount 39360 <span class="currency">Р</span>
+    p.final-count__row.final-count__row_amount-services
+      span.final-count__inner Сбор за услуги: <span class="services-discount">скидка<span class="services-discount-value">2179<span class="currency">Р</span></span></span>
+      span.add-info.add-info-about-service !
+      span.amount-services 0 <span class="currency">Р</span>
+    p.final-count__row.final-count__row_add-amount-services
+      span.final-count__inner Сбор за дополнительные услуги 
+      span.add-info.add-info-about-add-service !
+      span.amount-add-services 300 <span class="currency">Р</span>
+  div.final-amount
+    p.final-amount__row Итого<span>.....................................................</span><span class="final-price">38081<span class="currency">Р</span></span>
+  button.order-button Забронировать
