@@ -1,5 +1,5 @@
 {
-  "name": "hoteltoxic",
+  "name": "barbershop",
   "version": "1.0.0",
   "description": "сайт бронирования номеров в отеле Toxic",
   "main": "index.js",
@@ -23,6 +23,7 @@
     "@babel/preset-env": "^7.6.3",
     "autoprefixer": "^9.7.0",
     "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
@@ -46,5 +47,13 @@
   "dependencies": {
     "@babel/polyfill": "^7.6.0",
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MishaPandovich/Barbershop_adaptive.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MishaPandovich/Barbershop_adaptive/issues"
+  },
+  "homepage": "https://github.com/MishaPandovich/Barbershop_adaptive#readme"
 }

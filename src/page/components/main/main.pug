@@ -1,26 +1,84 @@
-main.main-page.container
-  section.search-rooms
-    h2.search-rooms__title Найдём номера под ваши желания
-    div.date-picker.search-rooms__date-picker
-      label.date-picker__label(for="datepicker") Прибытие
-        input.date-picker__input(type="text" id="datepicker" placeholder="ДД.ММ.ГГГГ" readonly)
-      label.date-picker__label(for="datepicker-go") Выезд
-        input.date-picker__input(type="text" id="datepicker-go" placeholder="ДД.ММ.ГГГГ" readonly)
-    div.select-visitors.search-rooms__select-visitors
-      label.select-visitors__label(for="visitors") Гости
-        input.select-visitors__input(type="text" id="visitors" placeholder="Сколько гостей" readonly)
-      div.select-visitors__block
-        div.select-visitors__inner
-        span.select-visitors__clear Очистить
-        span.select-visitors__close Выполнить
-    a.search-rooms__link(href="#") Подобрать номер
-
-  p.main-page__slogan Лучшие номера для вашей работы, отдыха и просто вдохновения
-//-   //- шаблон для блока выбора колич. людей вьезжающих в номер 
-//-   template(id="select-count-visitors")
-//-     div.select-count-visitors__option
-//-       span.type-visitor Взрослые
-//-       div.count-visitors
-//-         span.minus-visitor -
-//-         span.count-visitor 2
-//-         span.plus-visitor +
+main.page-main
+  h1.visually-hidden Барбершоп «Бородинский» – истинно мужская классика
+  section.stats
+    header.stats__header
+      h2.visually-hidden Статистика Барбершопа
+      b.stats__slogan Стрижка у нас это выгодно!
+      p.stats__intro Мужская стрижка требует точного подхода. Обратимся к статистике:
+      small.stats__legend.stats__legend--top
+        <sup>*</sup> - приведённые данные ложь
+    table.stats__list
+      tr
+        td.stats__value 1 500 <sup>*</sup>
+        td.stats__field рублей<br> вложений
+      tr
+        td.stats__value  7 200
+        td.stats__field секунд<br> времени мастера  
+      tr
+        td.stats__value 90 000
+        td.stats__field постриженных<br> волос
+      tr
+        td.stats__value 500 000 <sup>*</sup>
+        td.stats__field лайков <br> и комплиментов
+    small.stats__legend.stats__legend--top
+        <sup>*</sup> - приведённые данные ложь
+  section.advantages
+    div.advantages__wrapper.slider
+      h2.visually-hidden Наши преимущества
+      ul.advantages__list.slider-list
+        li.advanrages__item.advantages__item--fast.slider__item
+          h3.advantages__title Быстро
+          p.advantages__description Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.
+        li.advanrages__item.advantages__item--cool.slider__item
+          h3.advantages__title Круто
+          p.advantages__description Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.
+        li.advanrages__item.advantages__item--price.slider__item
+          h3.advantages__title Дорого
+          p.advantages__description Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?
+      p.advantages__toggles.slider__toggles
+        button.slider__toggle(type="button") 1
+        button.slider__toggle(type="button") 2
+        button.slider__toggle(type="button") 3
+  section.news
+    div.news__wrapper
+      h2.news__title Новости и акции
+      ul.news__list
+        li.news__item
+          time.news__date(datetime="2017-09-29")
+            <b class="news__day">29</b> сент
+          p.news__text Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.
+        li.news__item
+          time.news__date(datetime="2017-09-19")
+            <b class="news__day">19</b> сент
+          p.news__text В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!
+        li.news__item
+          time.news__date(datetime="2017-09-09")
+            <b class="news__day">9</b> сент
+          p.news__text Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём здесь подвох!
+      a.news__to-all.button(href="#") Показать все
+  section.reviews
+    div.reviews__wrapper.slider
+      h2.reviews__title Отзывы о нас
+      a.reviews__write.button(href="#") Оставить свой
+      div.reviews__list.slider__list
+        blockqoute.reviews__item.slider__item
+          p.reviews__author-picture
+            img.reviews__author-image(src="#" width="50" height="33" alt="Фото Трэвиса Баркера")
+          cite.reviews__author-name Трэвис Баркер
+          p.reviews__text Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+        blockqoute.reviews__item.slider__item
+          p.reviews__author-picture
+            img.reviews__author-image(src="#" width="50" height="33" alt="Фото Джона Смита")
+          cite.reviews__author-name Джон Смит
+          p.reviews__text Отличную стрижку мне сделали ребята.
+        blockqoute.reviews__item.slider__item
+          p.reviews__author-picture
+            img.reviews__author-image(src="#" width="50" height="33" alt="Фото Ивана Бородайло")
+          cite.reviews__author-name Иван Бородайло
+          p.reviews__text В Бородинском ваша борода в надёжных руках!
+        button.reviews__prev(type="button") Предыдущий отзыв
+        button.reviews__next(type="button") Следующий отзыв     
+      div.reviews__toggles.slider__toggles
+        button.slider__toggle(type="button") 1
+        button.slider__toggle(type="button") 2
+        button.slider__toggle(type="button") 3  
